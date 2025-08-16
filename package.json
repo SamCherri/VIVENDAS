@@ -5,12 +5,20 @@
   "type": "commonjs",
   "scripts": {
     "build": "npx --yes -p typescript tsc -p tsconfig.json",
-    "dev": "npx --yes -p ts-node -p typescript ts-node src/index.ts",
+    "dev": "ts-node-dev src/server.ts",
     "lint": "npx --yes -p eslint@8 eslint . --ext .ts",
     "fmt": "npx --yes -p prettier prettier . --write",
-    "test": "npm run build && npx --yes jest dist"
+    "test": "npm run build && npx --yes jest dist",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }

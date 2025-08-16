@@ -4,7 +4,8 @@ Projeto inicial em Node.js com TypeScript.
 
 ## Scripts
 
-- `npm run dev` – executa `src/index.ts`.
+- `npm run dev` – inicia servidor com ts-node-dev.
+- `npm start` – executa a versão compilada.
 - `npm run lint` – analisa o código com ESLint.
 - `npm run fmt` – formata com Prettier.
 - `npm test` – roda os testes com Jest.
@@ -13,7 +14,8 @@ Projeto inicial em Node.js com TypeScript.
 ## Como rodar
 
 1. Instale as dependências com `npm ci`.
-2. Execute o código com `npm run dev`.
+2. Inicie o servidor em desenvolvimento com `npm run dev`.
 3. Rode os testes com `npm test`.
 4. Gere o build com `npm run build`.
-
+5. Execute o build com `npm start`.
+6. Rode com Docker: `docker compose up`.
