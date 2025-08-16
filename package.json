@@ -1,0 +1,16 @@
+{
+  "name": "vivendas",
+  "version": "1.0.0",
+  "description": "readme",
+  "type": "commonjs",
+  "scripts": {
+    "build": "npx --yes -p typescript tsc -p tsconfig.json",
+    "dev": "npx --yes -p ts-node -p typescript ts-node src/index.ts",
+    "lint": "npx --yes -p eslint@8 eslint . --ext .ts",
+    "fmt": "npx --yes -p prettier prettier . --write",
+    "test": "npm run build && npx --yes jest dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
